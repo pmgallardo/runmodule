@@ -1,7 +1,7 @@
 ---
-title: Quartz
+title: DokuWiki
 contentType: reference
 ---
 
-**Dokuwiki** is file-based (plain text). It is lightweight and used for easy-to-maintain corporate or personal documentation.
+**DokuWiki** is a file-based (plain text) [[collaborative knowledge base]] or wiki. It is lightweight and used for easy-to-maintain corporate or personal documentation.
 

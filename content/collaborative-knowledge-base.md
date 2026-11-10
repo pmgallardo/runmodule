@@ -1,5 +1,5 @@
 ---
-title: Quartz
+title: Collaborative knowledge base
 contentType: reference
 ---
 
@@ -19,4 +19,4 @@ It is a type of knowledge management system (KMS).
 
 # Related entries
 
-[[Knowledge management system]]
+Knowledge management system
