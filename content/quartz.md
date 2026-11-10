@@ -40,6 +40,14 @@ npx quartz build --serve
 
 Then, open a browser and visit the website (by default, <https://localhost:8080>)
 
+# Syncing
+
+If the project is being published at a remote destination, you can avoid manual updates using git with the following command:
+
+```shell
+npx quartz sync
+```
+
 # Updating Quartz
 
 Perform a commit before updating Quartz, as a backup.
