@@ -38,7 +38,7 @@ It is object-oriented.
 
 ## Foam
 
-[[foam-software|Foam]]
+[[Foam]]
 
 ## Zettlr
 
