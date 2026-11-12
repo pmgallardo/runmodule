@@ -64,7 +64,7 @@ npx quartz update
 Alternatively, you can use the `git` command:
 
 ```shell
-git pull
+git pull upstream v5
 ```
 
 # Customizing Quarts
