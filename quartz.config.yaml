@@ -7,7 +7,7 @@ configuration:
   analytics:
     provider: plausible
   locale: en-US
-  baseUrl: pmgallardo.github.io/runmodule
+  baseUrl: runmodule.pmgallardo.workers.dev
   ignorePatterns:
     - private
     - templates
