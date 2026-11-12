@@ -59,7 +59,13 @@ hugo new theme <THEMENAME>
 
 You can also browse between existing themes from <https://themes.gohugo.io/>. It will redirect you to the corresponding GitHub project. 
 
-Once you have identified a git project for the theme, you can download it using the command `git`. Taking the template PaperMod as an example:
+Once you have identified a git project for the theme, you can download it using the command `git`:
+
+```shell
+git submodule add https://github.com/<USERNAME>/<PROJECTNAME>.git themes/<THEMENAME>
+```
+
+Taking the template PaperMod as an example:
 
 ```shell
 git submodule add https://github.com/adityatelange/hugo-PaperMod.git themes/PaperMod

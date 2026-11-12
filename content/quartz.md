@@ -30,22 +30,42 @@ Run the interactive setup wizard:
 npx quartz create
 ```
 
-Remove (or update) the files that refer to the original Quartz project:s
+Update the `README.md` file. To avoid the file to be overwritten with future updates, create a `.gitattributes` file and add the following line:
 
 ```text
-README.md
-LICENSE.md
-CHANGELOG.md
-CODE_OF_CONDUCT.md
+README.md merge=ours
 ```
 
-If you are sure that you're not using that file in your project, you can add it to `.gitignore` or removed from git cache to ensure they are never updated:
+If your project license is the same as Quartz (MIT), you don't need to do anything. But if it's different, you should add a note within the `README.md` file.
+
+If a file isn't used in your project and it must never be updated, you can add it to `.gitignore` or removed from git cache to ensure they are never updated:
 
 ```shell
 git rm --cached FILENAME.md
 ```
 
 These optional steps are "optional" because the expected repo updates should affect only (or mainly) ``. But you can do it just to make sure.
+
+# Update
+
+Before performing updating Quartz, ensure all changes are committed or they will be discarded:
+
+```shell
+git add .
+git commit -m "Save local configuration and content changes"
+```
+
+You can update it by using Quartz:
+
+```shell
+npx quartz update
+```
+
+Alternatively, you can use the `git` command:
+
+```shell
+git pull
+```
 
 # Customizing Quarts
 
@@ -71,20 +91,5 @@ If the project is being published at a remote destination, you can avoid manual 
 
 ```shell
 npx quartz sync
-```
-
-# Updating Quartz
-
-Perform a commit before updating Quartz, as a backup.
-
-```shell
-git add .
-git commit -m "Save local configuration and content changes"
-```
-
-Pull changes from the backup:
-
-```shell
-git pull https://github.com/jackyzha0/quartz.git v4
 ```
 
