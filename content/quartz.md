@@ -93,3 +93,9 @@ If the project is being published at a remote destination, you can avoid manual 
 npx quartz sync
 ```
 
+To add a manual commit message, just use the attribute `--message`:
+
+```shell
+npx quartz sync --message "<COMMIT MESSAGE>"
+```
+

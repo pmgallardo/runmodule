@@ -138,7 +138,7 @@ plugins:
   - source: "@quartz-community/tag-page"
     enabled: true
   - source: "@quartz-community/explorer"
-    enabled: true
+    enabled: false
     layout:
       position: left
       priority: 50
@@ -210,8 +210,8 @@ plugins:
     enabled: true
     options:
       links:
-        GitHub: https://github.com/pmgallardo/runmodule
-        Author's Website: https://pmgallardo.com
+        Repository: https://github.com/pmgallardo/runmodule
+        Author's website: https://pmgallardo.com
     layout:
       position: footer
       priority: 50
@@ -244,6 +244,24 @@ plugins:
       position: beforeBody
       priority: 15
       display: all
+  # Custom plugin with bio
+  - source: ./bio-quartz-plugin
+    enabled: true
+    options: {}
+    order: 50
+    layout:
+      position: left
+      priority: 50
+  # Community plugin
+  - source: github:quartz-community/recent-notes
+    enabled: true
+    options:
+      title: "Recent Notes"
+      limit: 10        # Shows the last 10 notes
+      showTags: false  # Optional: hides tags to keep the sidebar clean
+    layout:
+      position: left
+      priority: 60     # Adjust priority to place it above or below your bio widget
 layout:
   groups:
     toolbar:
