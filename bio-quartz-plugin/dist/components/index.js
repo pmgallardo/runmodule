@@ -7,7 +7,7 @@ var BioComponent = () => {
     return /* @__PURE__ */ jsxs("div", { class: `bio-widget ${displayClass ?? ""}`, children: [
       /* @__PURE__ */ jsx("h3", { children: "About the Author" }),
       /* @__PURE__ */ jsx("p", { children: "Welcome to my digital garden. I'm Pablo Gallardo, the creator behind these 1,000+ notes." }),
-      /* @__PURE__ */ jsx("ul", { children: /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsx("a", { href: "https:/pmgallardo.com", children: "My personal website" }) }) })
+      /* @__PURE__ */ jsx("ul", { children: /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsx("a", { href: "https://pmgallardo.com", children: "My personal website" }) }) })
     ] });
   };
   Bio.css = `

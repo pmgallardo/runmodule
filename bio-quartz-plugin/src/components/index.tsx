@@ -9,7 +9,7 @@ export const BioComponent: QuartzComponentConstructor = () => {
         <h3>About the Author</h3>
         <p>Welcome to my digital garden. I'm Pablo Gallardo, the creator behind these 1,000+ notes.</p>
         <ul>
-          <li><a href="https:/pmgallardo.com">My personal website</a></li>
+          <li><a href="https://pmgallardo.com">My personal website</a></li>
         </ul>
       </div>
     )
